@@ -29,3 +29,14 @@ create_users.sql
 setup_permissions.php
 setup_users.php
 test_notification.php
+
+# Test files
+/routes/api_test.php
+*test*.php
+*Test*.php
+
+# Cache and logs
+/storage/logs/*.log
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*.php
