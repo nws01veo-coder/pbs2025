@@ -21,6 +21,7 @@ use Filament\Tables\Table;
 class JabatanResource extends Resource
 {
     protected static ?string $model = Jabatan::class;
+    protected static ?string $slug = 'jabatan';
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::Briefcase;
     protected static string | UnitEnum | null $navigationGroup = NavigationGroups::AnggotaManagement;

@@ -20,6 +20,8 @@ use App\Filament\Resources\NavigationGroups;
 class UserResource extends Resource
 {
     protected static ?string $model = User::class;
+    protected static ?string $slug = 'users';
+
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedUser;
 

@@ -21,6 +21,7 @@ use Filament\Tables\Table;
 class LocationResource extends Resource
 {
     protected static ?string $model = Location::class;
+    protected static ?string $slug = 'lokasi';
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::MapPin;
     protected static string | UnitEnum | null $navigationGroup = NavigationGroups::AnggotaManagement;

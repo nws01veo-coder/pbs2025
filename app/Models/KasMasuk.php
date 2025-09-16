@@ -16,6 +16,6 @@ class KasMasuk extends Model
     ];
 
     protected $casts = [
-        'tanggal' => 'date',
+        'tanggal' => 'datetime',
     ];
 }

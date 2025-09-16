@@ -20,8 +20,9 @@ class KasMasuksTable
         return $table
             ->columns([
                 TextColumn::make('tanggal')
-                    ->date()
-                    ->sortable(),
+                    ->date('d/m/Y')
+                    ->sortable()
+                    ->label('Tanggal'),
                 TextColumn::make('deskripsi')
                     ->searchable(),
                 TextColumn::make('jumlah')

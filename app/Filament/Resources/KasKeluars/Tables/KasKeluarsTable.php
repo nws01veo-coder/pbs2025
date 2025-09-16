@@ -19,8 +19,9 @@ class KasKeluarsTable
         return $table
             ->columns([
                 TextColumn::make('tanggal')
-                    ->date()
-                    ->sortable(),
+                    ->date('d/m/Y')
+                    ->sortable()
+                    ->label('Tanggal'),
                     
                 TextColumn::make('anggota.name')
                     ->searchable(),

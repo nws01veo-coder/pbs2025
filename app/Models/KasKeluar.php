@@ -18,7 +18,7 @@ class KasKeluar extends Model
     ];
 
     protected $casts = [
-        'tanggal' => 'date',
+        'tanggal' => 'datetime',
     ];
 
     public function anggota(): BelongsTo

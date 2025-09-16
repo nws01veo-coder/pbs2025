@@ -22,6 +22,7 @@ use Illuminate\Support\Facades\Auth;
 class KocokArisanResource extends Resource
 {
     protected static ?string $model = KocokArisan::class;
+    protected static ?string $slug = 'kocok-arisan';
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedTrophy;
     protected static string|UnitEnum|null $navigationGroup = NavigationGroups::ArisanManagement;

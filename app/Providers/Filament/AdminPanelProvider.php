@@ -47,6 +47,7 @@ class AdminPanelProvider extends PanelProvider
             ->colors([
                 'primary' => Color::Amber,
             ])
+            ->darkMode(false)
             ->resources([
                 AnggotaResource::class,
                 JabatanResource::class,

@@ -21,6 +21,7 @@ use Filament\Tables\Table;
 class KasMasukResource extends Resource
 {
     protected static ?string $model = KasMasuk::class;
+    protected static ?string $slug = 'kas-masuk';
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::ArrowDownTray;
     protected static string | UnitEnum | null $navigationGroup = NavigationGroups::KasManagement;

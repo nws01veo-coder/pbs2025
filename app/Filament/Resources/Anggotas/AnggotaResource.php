@@ -21,6 +21,7 @@ use App\Filament\Resources\NavigationGroups;
 class AnggotaResource extends Resource
 {
     protected static ?string $model = Anggota::class;
+    protected static ?string $slug = 'anggota';
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedUserGroup;
     protected static string | \UnitEnum | null $navigationGroup = NavigationGroups::AnggotaManagement;

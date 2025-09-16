@@ -21,6 +21,7 @@ use Filament\Tables\Table;
 class KasKeluarResource extends Resource
 {
     protected static ?string $model = KasKeluar::class;
+    protected static ?string $slug = 'kas-keluar';
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::ArrowUpTray;
 

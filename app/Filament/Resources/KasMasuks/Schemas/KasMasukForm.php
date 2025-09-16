@@ -18,7 +18,8 @@ class KasMasukForm
             ->components([
                 DatePicker::make('tanggal')
                     ->required()
-                    ->default(now()),
+                    ->default(now())
+                    ->label('Tanggal'),
                 TextInput::make('deskripsi')
                     ->required(),
                 TextInput::make('jumlah')

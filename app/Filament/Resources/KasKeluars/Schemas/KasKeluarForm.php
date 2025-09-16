@@ -14,25 +14,26 @@ class KasKeluarForm
         return $schema
             ->components([
                 DatePicker::make('tanggal')
-                        ->required()
-                        ->default(now()),
+                    ->required()
+                    ->default(now())
+                    ->label('Tanggal'),
 
-                    TextInput::make('deskripsi')
-                        ->required()
-                        ->autofocus()
-                        ->placeholder('Contoh: Biaya Kopi & Snack Rapat'),
+                TextInput::make('deskripsi')
+                    ->required()
+                    ->autofocus()
+                    ->placeholder('Contoh: Biaya Kopi & Snack Rapat'),
 
-                    TextInput::make('jumlah')
-                        ->numeric()
-                        ->prefix('Rp')
-                        ->required(),
+                TextInput::make('jumlah')
+                    ->numeric()
+                    ->prefix('Rp')
+                    ->required(),
 
-                    Select::make('anggota_id')
-                        ->relationship('anggota', 'name')
-                        ->searchable()
-                        ->preload()
-                        ->required()
-                        ->placeholder('Yang menerima Kas'),
+                Select::make('anggota_id')
+                    ->relationship('anggota', 'name')
+                    ->searchable()
+                    ->preload()
+                    ->required()
+                    ->placeholder('Yang menerima Kas'),
             ])->columns(2);
     }
 }
